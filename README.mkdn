@@ -1,4 +1,4 @@
-Copyright (C) 2017-2018 The LineageOS Project
+Copyright (C) 2017-2019 The LineageOS Project
 
 Device configuration for Xiaomi Mi 5s Plus
 =========================================

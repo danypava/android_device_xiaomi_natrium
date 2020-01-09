@@ -21,11 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from natrium device
 $(call inherit-product, device/xiaomi/natrium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common vendor stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_natrium
+PRODUCT_NAME := aosp_natrium
 PRODUCT_DEVICE := natrium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 5s Plus
@@ -36,7 +37,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="natrium" \
     PRODUCT_NAME="natrium" \
-    PRIVATE_BUILD_DESC="natrium-user 7.0 NRD90M V9.6.2.0.NBGMIFD release-keys"
+    PRIVATE_BUILD_DESC="natrium-user 8.0.0 OPR1.170623.032 V8.11.23.OPR1.170623.032 release-keys"
+    
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/natrium/natrium:7.0/NRD90M/V9.6.2.0.NBGMIFD:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/natrium/natrium:8.0.0/OPR1.170623.032/8.11.23:user/release-keys"
